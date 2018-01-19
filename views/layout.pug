@@ -1,0 +1,15 @@
+doctype
+html
+	head
+		title #{title} -My Site
+		script(src='/components/jquery/dist/jquery.js')
+		script(src='/components/lazysizes/lazysizes.min.js')
+		script(data-main='js/main', src='/components/requirejs/require.js')
+		link(rel='stylesheet', href='/css/style.css')
+	body
+		header
+			p Image Gallery
+		block images
+		include includes/overlay.jade
+	footer
+		p nothing but a footer

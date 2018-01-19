@@ -1,0 +1,6 @@
+extends layout.pug
+block images
+	.image-grid
+		each image,index in images
+			.image-container
+				img(class='lazyload' data-originsrc=image.src data-src=image.src480)
